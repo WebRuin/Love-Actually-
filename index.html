@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Christmas</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div></div>
+    <audio src="https://dl.dropboxusercontent.com/content_link/jCzTofVBbcG58D6yvFNmTO9FZIEf6V80KZ46aZajzWxDRH7gEKQEqwyTI4NRse7V/file">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <div id="snow" class="snow">
+        <div class="btn-wapper">
+            <svg id="btn" viewbox="0 0 140 140">
+                <circle cx="70" cy="70" r="65" style="fill:#fff;stroke:#ddd" />
+                <polygon id="shape" points="50,40 100,70 100,70 50,100, 50,40" style="fill:#aaa;">
+                    <animate id="animate_to_stop" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="45,45 95,45 95,95, 45,95 45,45" keySplines="
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1" keyTimes="0;0.22;0.33;0.55;0.66;0.88;1" calcMode="spline" />
+
+                    <animate id="animate_to_play" begin="indefinite" fill="freeze" attributeName="points" dur="500ms" to="50,40 100,70 100,70 50,100, 50,40" keySplines="
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1;
+              0.1 0.8 0.2 1" keyTimes="0;0.22;0.33;0.55;0.66;0.88;1" calcMode="spline" />
+                </polygon>
+            </svg>
+        </div>
+        <audio id="song" src="http://www.webruin.co.uk/song.mp3" autoplay preload="auto"></audio>
+        <div class="panel">
+            <h1 class="logo">
+          <span class="red">love</span>actually
+      </h1>
+            <div class="quote">
+                <span class="wrapper">
+          <span class="element"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+  </body>
+  </html>
