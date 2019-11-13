@@ -1,0 +1,81 @@
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+  letter-spacing: -1.5px;
+}
+.red {
+  color: #f00;
+  font-weight: 800;
+}
+.snow {
+  position: relative;
+  display: flex;
+  background: #005;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.panel {
+  height: 70vh;
+  width: 70vw;
+  padding: 0;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  background: rgba(222, 222, 222, 08);
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*
+	Play, Pause Button
+*/
+
+.play-pause-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: 1px solid #f00;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 37px;
+  border-color: transparent transparent transparent #eee;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 18.5px 0 18.5px 30px;
+}
+
+.play-pause-button.paused {
+  border-style: double;
+  border-width: 0px 0 0px 60px;
+}
+
+.play-pause-button:hover {
+  border-color: transparent transparent transparent #f00;
+}
+
+.logo {
+  margin: 4rem 4rem 1rem 4rem;
+  font-size: 3rem;
+  font-family: Helvetica Neue;
+}
+
+.quote {
+  margin: 0 4rem;
+  font-size: 2rem;
+  font-family: Helvetica Neue;
+}
+
+.wrapper {
+  height: 2em;
+  overflow: hidden;
+}
+.element {
+  text-align: left;
+  font-size: 1.25em;
+}
