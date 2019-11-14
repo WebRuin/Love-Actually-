@@ -23,7 +23,7 @@
     "not dead"
   ],
   "scripts": {
-    "build": "gulp && serve dist"
+    "dev": "gulp"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
