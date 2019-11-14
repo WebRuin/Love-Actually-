@@ -1,3 +1,14 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: Helvetica Neue;
+}
+
 h1 {
   font-size: 3em;
   font-weight: 100;
@@ -13,6 +24,7 @@ h1 {
   background: #005;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
 }
@@ -34,14 +46,27 @@ h1 {
 	Play, Pause Button
 */
 
+.play-pause-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-pause-button-wrapper span {
+  font-size: 1.1rem;
+  color: #eee;
+  font-family: Helvetica Neue;
+  padding: 10px 0 0 4.75rem;
+}
+
 .play-pause-button {
   position: absolute;
+  width: 350px;
   top: 10px;
   left: 10px;
   border: 1px solid #f00;
   background: transparent;
   box-sizing: border-box;
-  width: 0;
   height: 37px;
   border-color: transparent transparent transparent #eee;
   transition: 100ms all ease;
@@ -62,13 +87,12 @@ h1 {
 .logo {
   margin: 4rem 4rem 1rem 4rem;
   font-size: 3rem;
-  font-family: Helvetica Neue;
 }
 
 .quote {
   margin: 0 4rem;
-  font-size: 2rem;
-  font-family: Helvetica Neue;
+  font-size: 1.75rem;
+  font-family: Helvetica Neue !important;
 }
 
 .wrapper {

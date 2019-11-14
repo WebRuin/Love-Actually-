@@ -8,12 +8,14 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
   </head>
   <body>
-    <div></div>
-    <audio id="themeSong" src="theme-song.mp3">
+    <audio autoplay id="themeSong" src="theme-song.mp3">
       Your browser does not support the <code>audio</code> element.
     </audio>
-    <div id="snow" class="snow">
-      <button class="play-pause-button" onClick="togglePlay()"></button>
+    <div id="snow" class="snow" onClick="togglePlay()">
+      <div class="play-pause-button-wrapper">
+        <button class="play-pause-button" onClick="togglePlay()"></button>
+        <span>Click anywhere to play/pause the audio</span>
+      </div>
       <div class="panel">
         <h1 class="logo"><span class="red">love</span>actually</h1>
         <div class="quote">
