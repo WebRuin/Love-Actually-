@@ -39,8 +39,5 @@
     "gulp-uglify": "^2.0.0",
     "prettier": "^1.18.2",
     "run-sequence": "^1.2.2"
-  },
-  "dependencies": {
-    "gulp-cli": "^2.2.0"
   }
 }
